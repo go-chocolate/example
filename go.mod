@@ -3,10 +3,9 @@ module github.com/go-chocolate/example
 go 1.20
 
 require (
-	github.com/go-chocolate/chocolate/example v0.0.0-20240325073404-aa417e3aa464
 	github.com/go-chocolate/chocolate/pkg/chocolate v0.0.0-20240325063613-820474bb22bc
 	github.com/go-chocolate/chocolate/pkg/kv v0.0.0-20240315062336-a74dac18b344
-	github.com/go-chocolate/configuration/configuration v0.0.1
+	github.com/go-chocolate/configuration/configuration v0.0.2
 	github.com/go-gormigrate/gormigrate/v2 v2.1.2
 	github.com/google/uuid v1.6.0
 	github.com/julienschmidt/httprouter v1.3.0
@@ -36,7 +35,6 @@ require (
 	github.com/redis/go-redis/v9 v9.5.1 // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
-	gitlab.isigning.cn/aoscript-component/toolkit v1.1.5 // indirect
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.49.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.49.0 // indirect
 	go.opentelemetry.io/otel v1.24.0 // indirect
@@ -51,7 +49,6 @@ require (
 	google.golang.org/grpc v1.62.1 // indirect
 	google.golang.org/protobuf v1.32.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
-	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gorm.io/driver/mysql v1.5.4 // indirect
 	modernc.org/libc v1.22.5 // indirect
 	modernc.org/mathutil v1.5.0 // indirect

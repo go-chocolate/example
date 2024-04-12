@@ -5,7 +5,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/go-chocolate/chocolate/example/internal/app"
+	"github.com/go-chocolate/example/internal/app"
 )
 
 func main() {

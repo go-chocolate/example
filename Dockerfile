@@ -8,9 +8,9 @@ WORKDIR /opt/app
 
 ADD . .
 
-#RUN commit_id=$(git rev-parse HEAD)
-RUN datetime=$(date '+%Y-%m-%d %H:%M:%S')
-RUN go build -ldflags "-X github.com/go-chocolate/example/version.BuildTime=$datetime -X github.com/go-chocolate/example/version.BuildHash=$commitid" -o example main.go
+ENV GOPROXY=https://goproxy.cn,direct
+
+RUN go build -ldflags "-X github.com/go-chocolate/example/version.BuildTime=$(date '+%Y-%m-%d_%H:%M:%S') -X github.com/go-chocolate/example/version.BuildHash=$(git rev-parse HEAD)" -o example main.go
 
 FROM alpine:latest AS runner
 
@@ -22,6 +22,6 @@ ENV TZ Asia/Shanghai
 WORKDIR /opt/app
 
 COPY --from=builder /opt/app/example .
-COPY --from=builder /opt/app/etc .
+COPY --from=builder /opt/app/etc/conf.yaml etc/conf.yaml
 
 ENTRYPOINT ./example

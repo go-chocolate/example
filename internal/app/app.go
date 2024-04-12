@@ -7,6 +7,7 @@ import (
 	"github.com/go-chocolate/chocolate/pkg/chocolate/chocorpc"
 	"github.com/go-chocolate/chocolate/pkg/chocolate/service"
 	"github.com/go-chocolate/configuration/configuration"
+	"github.com/sirupsen/logrus"
 
 	"github.com/go-chocolate/example/internal/app/config"
 	"github.com/go-chocolate/example/internal/app/dependency"
@@ -30,8 +31,10 @@ func Run() {
 
 	httpsrv := chocohttp.NewServer(cfg.HTTP)
 	httpsrv.SetRouter(http.Router())
+	logrus.Infof("http server listening on %s", cfg.HTTP.Addr)
 
 	rpcsrv := chocorpc.NewServer(cfg.RPC)
+	logrus.Infof("rpc server listening on %s", cfg.RPC.Addr)
 
 	group := service.Group(httpsrv, rpcsrv)
 

@@ -19,8 +19,6 @@ github.com/glebarez/go-sqlite v1.21.2 h1:3a6LFC4sKahUunAmynQKLZceZCOzUthkRkEAl9g
 github.com/glebarez/go-sqlite v1.21.2/go.mod h1:sfxdZyhQjTM2Wry3gVYWaW072Ri1WMdWJi0k6+3382k=
 github.com/glebarez/sqlite v1.10.0 h1:u4gt8y7OND/cCei/NMHmfbLxF6xP2wgKcT/BJf2pYkc=
 github.com/glebarez/sqlite v1.10.0/go.mod h1:IJ+lfSOmiekhQsFTJRx/lHtGYmCdtAiTaf5wI9u5uHA=
-github.com/go-chocolate/chocolate/example v0.0.0-20240325073404-aa417e3aa464 h1:UsuDlw0uhyQx62sdXWzXvDis2SotMihEjD3VgPzrGDg=
-github.com/go-chocolate/chocolate/example v0.0.0-20240325073404-aa417e3aa464/go.mod h1:c5u0RMtA8VrjIPu/w/fcNe7WuU5TtR1PCBlvQWqHSok=
 github.com/go-chocolate/chocolate/pkg/chocolate v0.0.0-20240325063613-820474bb22bc h1:9JrsD+cFTIE++OU8nZk7PYfkDNyhAWVLXzB+gCTdjR8=
 github.com/go-chocolate/chocolate/pkg/chocolate v0.0.0-20240325063613-820474bb22bc/go.mod h1:Th6/Z+RjEJKxdUVEJquwkA621szTLgRGbKpXv6va5i8=
 github.com/go-chocolate/chocolate/pkg/database v0.0.0-20240315024032-2a13921cd834 h1:PoPFNmuAqPalgzUtg02CJY1JZhqTTPQU/LMWg3SSOj4=
@@ -31,8 +29,8 @@ github.com/go-chocolate/chocolate/pkg/telemetry v0.0.0-20240315062336-a74dac18b3
 github.com/go-chocolate/chocolate/pkg/telemetry v0.0.0-20240315062336-a74dac18b344/go.mod h1:BVQXTQctYJMQJqu7gkjJ2gfEq1xQKGXfBg0JlV93vZE=
 github.com/go-chocolate/chocolate/pkg/toolkit v0.0.0-20240315062336-a74dac18b344 h1:G9dCZbHk8u3zOnN8oznADWUsTZzPd01mcuf1jqFAt+Q=
 github.com/go-chocolate/chocolate/pkg/toolkit v0.0.0-20240315062336-a74dac18b344/go.mod h1:hozpz11LCkNwI/l/DGhWIFwJX552F+uTlm4d5Vv70kw=
-github.com/go-chocolate/configuration/configuration v0.0.1 h1:203LuGs+ytRCY3o8tSu+Kqvpg3XlwTuQaTIdvQ64obs=
-github.com/go-chocolate/configuration/configuration v0.0.1/go.mod h1:hViiAk/hc+8IVO1k+24hJjSho9dIAVMtF3Xnvb6kGqY=
+github.com/go-chocolate/configuration/configuration v0.0.2 h1:Bi+k2uuDz9xtew+q+uV7szM8HLqNJbhhwwCo7lukkE0=
+github.com/go-chocolate/configuration/configuration v0.0.2/go.mod h1:REiJOlEdq/QTxK8OxPdo+FvuZEqWONfX5cQ9u+bYW7Y=
 github.com/go-gormigrate/gormigrate/v2 v2.1.2 h1:F/d1hpHbRAvKezziV2CC5KUE82cVe9zTgHSBoOOZ4CY=
 github.com/go-gormigrate/gormigrate/v2 v2.1.2/go.mod h1:9nHVX6z3FCMCQPA7PThGcA55t22yKQfK/Dnsf5i7hUo=
 github.com/go-logr/logr v1.2.2/go.mod h1:jdQByPbusPIv2/zmleS9BjJVeZ6kBagPoEUsqbVz/1A=
@@ -72,8 +70,6 @@ github.com/sirupsen/logrus v1.9.3/go.mod h1:naHLuLoDiP4jHNo9R0sCBMtWGeIprob74mVs
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.8.4 h1:CcVxjf3Q8PM0mHUKJCdn+eZZtm5yQwehR5yeSVQQcUk=
-gitlab.isigning.cn/aoscript-component/toolkit v1.1.5 h1:6RnsZ1LC1lPlFcFUaAG4WCmM+FAGHh01UvYKFbufx5E=
-gitlab.isigning.cn/aoscript-component/toolkit v1.1.5/go.mod h1:VIg7kHBCDk9B49sH2uMY//uI1CVOXWVq7FdtFmAjz90=
 go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.49.0 h1:4Pp6oUg3+e/6M4C0A/3kJ2VYa++dsWVTtGgLVj5xtHg=
 go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.49.0/go.mod h1:Mjt1i1INqiaoZOMGR1RIUJN+i3ChKoFRqzrRQhlkbs0=
 go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.49.0 h1:jq9TW8u3so/bN+JPT166wjOI6/vQPF6Xe7nMNIltagk=
@@ -111,7 +107,6 @@ gopkg.in/yaml.v2 v2.4.0 h1:D8xgwECY7CYvx+Y2n4sBz93Jn9JRvxdiyyo8CTfuKaY=
 gopkg.in/yaml.v2 v2.4.0/go.mod h1:RDklbk79AGWmwhnvt/jBztapEOGDOx6ZbXqjP6csGnQ=
 gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
 gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
-gopkg.in/yaml.v3 v3.0.1/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
 gorm.io/driver/mysql v1.5.4 h1:igQmHfKcbaTVyAIHNhhB888vvxh8EdQ2uSUT0LPcBso=
 gorm.io/driver/mysql v1.5.4/go.mod h1:9rYxJph/u9SWkWc9yY4XJ1F/+xO0S/ChOmbk3+Z5Tvs=
 gorm.io/gorm v1.25.7-0.20240204074919-46816ad31dde/go.mod h1:hbnx/Oo0ChWMn1BIhpy1oYozzpM15i4YPuHDmfYtwg8=
