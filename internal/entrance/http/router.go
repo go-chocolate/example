@@ -1,19 +1,20 @@
 package http
 
 import (
-	"net/http"
-
-	"github.com/julienschmidt/httprouter"
-
+	"github.com/gin-gonic/gin"
+	"github.com/go-chocolate/example/internal/entrance/http/handler"
+	"github.com/go-chocolate/example/internal/entrance/http/middleware"
 	"github.com/go-chocolate/example/version"
+	"net/http"
 )
 
 func Router() http.Handler {
-	router := httprouter.New()
-
-	router.GET("/version", func(writer http.ResponseWriter, request *http.Request, params httprouter.Params) {
-		version.HTTPHandler()(writer, request)
+	router := gin.New()
+	router.GET("/version", func(ctx *gin.Context) {
+		version.HTTPHandler()(ctx.Writer, ctx.Request)
 	})
-
+	router.POST("/login", handler.Login)
+	router.POST("/register", handler.Register)
+	router.POST("/hello", middleware.Authorize, handler.Hello)
 	return router
 }

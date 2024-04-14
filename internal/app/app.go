@@ -2,6 +2,7 @@ package app
 
 import (
 	"context"
+	"github.com/go-chocolate/example/internal/dao/migrate"
 
 	"github.com/go-chocolate/chocolate/pkg/chocolate/chocohttp"
 	"github.com/go-chocolate/chocolate/pkg/chocolate/chocorpc"
@@ -35,6 +36,10 @@ func Run() {
 
 	rpcsrv := chocorpc.NewServer(cfg.RPC)
 	logrus.Infof("rpc server listening on %s", cfg.RPC.Addr)
+
+	if err := migrate.Migrate(dependency.Get().DB); err != nil {
+		panic(err)
+	}
 
 	group := service.Group(httpsrv, rpcsrv)
 

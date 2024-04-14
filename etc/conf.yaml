@@ -1,12 +1,13 @@
 Logger:
   Level: info
-
+  ReportCaller: false
 HTTP:
   Name: example
-  Addr: :8080
+  Addr: 0.0.0.0:8080
   Options:
     #CORS:
-    #Logger:
+    Logger:
+      Enable: true
     #RateLimit:
 
 Database:
